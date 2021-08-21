@@ -35,29 +35,29 @@
               keyboard US English.
             </p>
             <h4 class="fw-bold mt-5">Memory</h4>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id="btn-8gb" type="button" class="btn btn-light btn-outline-dark">
               8GB unified memory
             </button>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id="btn-16gb" type="button" class="btn btn-light btn-outline-dark">
               16GB unified memory
             </button>
 
             <h4 class="fw-bold mt-5">Storage</h4>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id="btn-256gb" type="button" class="btn btn-light btn-outline-dark">
               256GB SSD storage
             </button>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id="btn-512gb" type="button" class="btn btn-light btn-outline-dark">
               512GB SSD storage
             </button>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id="btn-1tb" type="button" class="btn btn-light btn-outline-dark">
               1TB SSD storage
             </button>
 
             <h4 class="fw-bold mt-5">Choose your delivery option</h4>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id='delv-btn1' type="button" class="btn btn-light btn-outline-dark">
               Friday,August 25 Free Prime Delivery
             </button>
-            <button type="button" class="btn btn-light btn-outline-dark">
+            <button id='delv-btn2' type="button" class="btn btn-light btn-outline-dark">
               Monday,August 25 Delivery Charge $20
             </button>
 
@@ -65,35 +65,34 @@
                 <thead>
                      <tr>
                         <th scope="col">Best Price</th>
-                        <th scope="col">$<span>1299</span></th>
+                        <th scope="col">$<span id="best-price">1299</span></th>
                     <tr>
                         <th scope="col">Extra Memory Cost</th>
-                        <th scope="col">$<span>0</span></th>
+                        <th scope="col">$<span id="extra-memory">0</span></th>
                     </tr>
                     <tr>
                         <th scope="col">Extra Storage Cost</th>
-                        <th scope="col">$<span>0</span></th>
+                        <th scope="col">$<span id='extra-storage'>0</span></th>
                     </tr>
                     <tr>
                         <th scope="col">Delivery Charge</th>
-                        <th scope="col">$<span>0</span></th>
+                        <th scope="col">$<span id='delivery-id'>0</span></th>
                     </tr>
-                    <hr>
                     <tr>
                         <th scope="col">Total Price</th>
-                        <th scope="col">$<span>1299</span></th>
+                        <th scope="col">$<span id='sub-total'>1299</span></th>
                     </tr>
                     </tr>
                 </thead>
             </table>
             
             <p>Add Promo Code</p>
-            <input type="text">
-            <button class="btn btn-danger" type="submit">Apply</button>
+            <input type="text" placeholder="Write Promo code" id="promo-input">
+            <button id="promo-submit" class="btn btn-danger" type="submit">Apply</button>
           </div>
         </div>
         <hr>
-        <h2 class="fw-bold d-flex justify-content-center">Total: $<span>1299</span></h2>
+        <h2 class="fw-bold d-flex justify-content-center">Total: $<span id="total-id">1299</span></h2>
       </div>
     </section>
     <script src="js/script.js"></script>
